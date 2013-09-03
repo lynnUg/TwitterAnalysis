@@ -2,7 +2,7 @@ import couchdb
 import json
 def add():
     server = couchdb.Server()
-    db = server['tweetsoccupynigeria']
+    db = server['tweetsghanadecides']
     json_data=open('start38.txt').read()
     #print json_data
     data=json.loads(json_data)
