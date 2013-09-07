@@ -2,28 +2,46 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head> <title>{% block title %}MyBlog{% endblock %}</title> </head>
+<head> <title>{% block title %}My2Blog{% endblock %}</title>
+<link rel="stylesheet" href="{{STATIC_URL}}/css/style.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
 
 <body>
-    <div id="sidebar"> {% block sidebar %} {% endblock %} </div>
-    <div id="container">
-        <div id="menu">
-            {% block nav-global %}
+<div id="wrap">
+<div id="container">
+<header>
+        <a href="index.html" class="logo"></a>
+        <ul>
+            <li class="learn_get">
+                <a href="learn_more.html" class="learn">Learn More</a>
+                <a href="get_involved.html" class="get">Get Involved</a>
+            </li>
+            <li class="mia">
+                <a href="mama_in_action.html" class="mia">Mama In Action</a>
+            </li>
+            <li class="part_con">
+                <a href="partners.html" class="partners">Partners</a>
+                <a href="contact.html" class="contact">Contact Us</a>
+            </li>
+        </ul>
+    </header><!--/Header-->
+    <div class="main" role="main">
+      <div class="content emulator">
+	
+	<div class="phone"><iframe src="http://localhost:8200/mobile"></iframe></div>
+	 
+            <div class="phone_text">
+                <h1>NTV.mobi</h1>
+                <h2>On your phone</h2>
+                <p>You can navigate through our mobile site for mothers by clicking on any of the links in the image on the left or, better yet, visit our site on your phone by going to askmama.mobi. Remember to register on the site, with your due date or the age of your baby, so that we can tailor the mobi site content, to you.</p>
+                <p><strong class="blue">Read.</strong> <strong class="blue">Discover.</strong> <strong class="red">Get Involved.</strong></p>
+            </div>
 
-                <!-- MENU -->
-                <h3>MyBlog</h3>
-                {% if user.is_staff %}
-                <a href="{% url admin:index %}">Admin</a>
-                <a href="{% url admin:blog_post_add %}">Add post</a>
-                {% endif %}
-
-            {% endblock %}
-        </div>
-
-        <div id="content">
-            {% block content %}{% endblock %}
-        </div>
-    </div>
-
+	</div><!--/content-->
+      </div><!--/Main-->
+</div>
+ </div>
 </body>
 </html>

@@ -1,0 +1,128 @@
+/* GLOBAL */
+    html, body { background: #dcdcdb url('../img/bg.png') center repeat-y; }
+    #wrap { width: 1000px; margin: 0 auto; background: url('../img/top.png') top no-repeat; }
+    #container { width: 1000px; margin: 0 auto; background: url('../img/bottom.png') bottom no-repeat; }
+/* GENERAL */
+    .align_left { float: left!important; }
+    .align_right { float: right!important; }
+    .nopad { padding: 0!important; }
+    .nopadright { padding-right: 0!important; }
+    .nomarg { margin: 0!important; }
+    .nomargright { margin-right: 0!important; }
+    .red { color: #d92128!important; }
+    .orange { color: #f54f16!important; }
+    .yellow { color: #f58d16!important; }
+    .blue { color: #220F8C!important; }
+    .border_red { border-top: 7px solid #d92128!important; }
+    .border_orange { border-top: 7px solid #f54f16!important; }
+    .border_yellow { border-top: 7px solid #f58d16!important; }
+    .border_brown { border-top: 7px solid #b30007!important; }
+    .clear { width: 97%; height: 0px!important; clear: both; }
+    .biglink { padding: 12px 0 0 0; display: block; color: #f54f16; font-weight: bold; font-size: 15px; text-decoration: none; }
+    .padless { padding: 4px 0 0 0; }
+    .brownlink { color: #b30007!important; text-decoration: none; }
+    .smaller { font-size: 24px!important; line-height: 37px!important; }
+    
+    /* HEADER */
+    
+    header { width: 940px; height: 115px; margin: 0 auto; padding: 7px 0 0 0; background: #fff url('../img/band.png') top no-repeat; }
+        header .logo { width: 187px; height: 140px; float: left; margin: -5px 0 0 30px; background: url('../img/logo6.png') no-repeat; }
+        header ul { height: 115px; float: right; margin: 0 200px 0 0; padding: 0; list-style-type: none; border-left: 3px solid #dcdcdd; }
+        header ul li { float: left; display: block; border-right: 3px solid #dcdcdd; }
+        header ul li a { display: block; overflow: hidden; text-indent: -999px; }
+        header ul li a.learn { width: 172px; height: 56px; background: url('../img/nav_learn_more.png') center no-repeat; border-bottom: 3px solid #dcdcdd; }
+        header ul li a.get { width: 172px; height: 56px; background: url('../img/nav_get_involved.png') center no-repeat; }
+        header ul li a.mia { width: 131px; height: 115px; background: url('../img/nav_mia.png') center no-repeat; }
+        header ul li a.contact { width: 175px; height: 56px; background: url('../img/nav_contact.png') center no-repeat; }
+        header ul li a.partners { width: 175px; height: 56px; background: url('../img/nav_partners.png') center no-repeat; border-bottom: 3px solid #dcdcdd; }
+
+/* CONTENT */
+    .main { width: 940px; float: left; margin: 0 30px; background: #fff; position: relative; }
+        .promo { width: 900px; height: 466px; float: left; margin: 0 20px; position: relative; overflow: hidden; }
+            .promo h1 { padding: 40px 0 0 65px; margin: 0; color: #ff4200; font-family: HelvN; font-size: 30px; font-weight: normal; text-transform: uppercase; }
+            .promo h2 { padding: 5px 0 0 60px; margin: 0; color: #fe8f00; font-family: HelvN; font-size: 80px; font-weight: normal; text-transform: uppercase; line-height: 80px; }
+            .promo p { padding: 0 0 0 65px; margin: 0; color: #666; font-size: 17px; line-height: 24px; }
+            .promo p a { color: #d92128; text-decoration: none; }
+            .promo_home { background: url('../img/promo_home.png') no-repeat; }
+            .promo_home h1 { padding: 30px 0 0 65px; }
+            .promo_home h2 { padding: 5px 0 0 60px; font-size: 76px; line-height: 76px; }
+
+        .banner { width: 780px; height: 295px; float: left; margin: 0 20px; padding: 0 60px; position: relative; }
+            .banner_contact { background: url('../img/banner_contact.png') no-repeat; }
+            .banner_mia { background: url('../img/banner_mia.png') no-repeat; }
+            .banner_learn { background: url('../img/banner_learn.png') no-repeat; }
+            .banner_involved { background: url('../img/banner_involved.png') no-repeat; }
+            .banner h1 { padding: 40px 0 0 5px; margin: 0; color: #ff4200; font-family: HelvN; font-size: 30px; font-weight: normal; text-transform: uppercase; }
+            .banner h2 { padding: 5px 0 0 0; margin: 0; color: #fe8f00; font-family: HelvN; font-size: 80px; font-weight: normal; text-transform: uppercase; line-height: 86px; }
+            .banner p { padding: 0 0 0 5px; margin: 0; color: #666; font-size: 18px; }
+        .content { width: 860px; float: left; padding: 40px; }
+            .half { width: 410px; float: left; padding: 17px 0 40px 0; border-top: 7px solid #da2128; position: relative; }
+                .half h1 { margin: 0; padding: 0; font-size: 15px; font-weight: normal; }
+                .half h2 { margin: 0; padding: 0 0 5px 0; font-family: HelvN; font-size: 30px; font-weight: normal; color: #000; text-transform: uppercase; }
+                .half h3 { margin: 0; padding: 0; font-size: 14px; font-weight: normal; color: #000; }
+                .half img { padding: 5px 0 15px 0; }
+            .third { width: 260px; float: left; padding: 17px 0 40px 0; margin: 0 40px 0 0; border-top: 7px solid #da2128; position: relative; }
+                .third h1 { margin: 0; padding: 0; font-size: 15px; font-weight: normal; }
+                .third h2 { margin: 0; padding: 0 0 5px 0; font-family: HelvN; font-size: 30px; line-height: 42px; font-weight: normal; color: #000; text-transform: uppercase; }
+                .third h3 { margin: 0; padding: 0; font-size: 14px; font-weight: normal; color: #000; }
+                .third p { margin: 0; }
+                .third ul { padding: 0 0 0 15px; }
+                .third .logo_pf { padding: 10px 0 20px 0; }
+                .third .logo_cl { padding: 5px 0 20px 0; }
+                .third .logo_wrhi { padding: 5px 0 7px 0; }
+        .diamond { width: 10px; height: 7px; position: absolute; top: -7px; right: -26px; background: url('../img/diamond.png') no-repeat; }
+        .girl { width: 270px; height: 381px; position: absolute; bottom: 282px; right: 30px; }
+        .spacer { width: 97%; height: 30px; clear: both; }
+        .divider { width: 860px; height: 2px; float: left; margin: 0 0 20px 0; background: #d9d9d9; }
+        .video { clear: both; display: block; text-decoration: none; background: url('../img/orange.png') no-repeat; }
+        a.video { color:#000!important; padding: 0 0 0 75px; font-family: HelvN; font-size: 16px; line-height: 20px; }
+/* intro */
+        .intro { width: 860px; float: left; padding: 0 0 40px 0; font-size: 18px; line-height: 24px; }
+
+        /* family */
+        .family { width: 860px; float; left; padding: 17px 0 0 0; border-top: 7px solid #f54f16; }
+            .family h1 { margin: 0; padding: 0; font-size: 15px; font-weight: normal; }
+            .family h2 { margin: 0; padding: 0; font-family: HelvN; font-size: 32px; font-weight: normal; color: #000; text-transform: uppercase; }
+            .family .full { width: 860px; float: left; padding: 20px 0; border: 0!important; }
+            .family .full h2 { font-size: 24px; }
+            .family .full h2 a { text-decoration: none; }
+            .family .half { width: 410px; float: left; padding: 20px 0; border: 0!important; }
+            .family .half h2 { font-size: 18px; }
+            .family .half p { line-height: 20px; }
+            .family .half p a { padding: 12px 0 0 0; display: block; color: #f54f16; font-weight: bold; font-size: 15px; text-decoration: none; }
+            .family .third { padding: 20px 0 40px 0; border: 0!important; }
+            .family .third h2 { font-size: 18px; }
+            .family .third p { line-height: 20px; }
+            .family .third p a { padding: 12px 0 0 0; display: block; color: #f54f16; font-weight: bold; font-size: 15px; text-decoration: none; }
+            .family .quarter { width: 185px; float: left; padding: 20px 40px 20px 0; border: 0!important; }
+            .family .quarter h2 { font-size: 18px; }
+            .family .quarter p { line-height: 20px; }
+            .family .quarter p a { padding: 12px 0 0 0; display: block; color: #f54f16; font-weight: bold; font-size: 15px; text-decoration: none; }
+            .family .member { width: 115px; float: left; margin: 10px 9px 0 0; }
+
+        /* news */
+        .news .third h2 { padding: 0 0 10px 0; line-height: 20px; }
+        .news .half { padding-bottom: 40px!important; }
+            .news .half img { float: left; display: block; padding: 0 20px 0 0; }
+            .news .half .title { margin: 0; font-size: 15px; color: #000; }
+            .news .half .title a { padding: 0; color: #000; font-weight: normal; }
+            .news .half .title a:hover { color: #f54f16; }
+            .news .half p { margin: 0; }
+
+        /* founders */
+        .founders { width: 860px; float; left; padding: 17px 0 0 0; border-top: 7px solid #f58d16; }
+            .founders h3 { margin: 0; padding: 0 0 10px 0; font-family: HelvN; font-size: 18px; font-weight: normal; color: #000; text-transform: uppercase; }
+            .founders .logos { width: 420px; float: left; }
+            .founders .logos a { float: left; margin: 0 45px 0 0; display: block; }
+            .founders .logos a img { display: block; }
+
+        /* emulator */
+        .emulator { width: 900px; height: 859px; padding: 0; margin: 0 20px 20px 20px; background: url('../img/bg_emulator.png') no-repeat; }
+            .emulator .phone { width: 418px; height: 686px; float: left; margin: 44px 0 0 50px; padding: 86px 0 0 127px; background: url('../img/phone.png') no-repeat }
+            .emulator .phone iframe { width: 230px; height: 270px; display: block; border: 0!important; margin: 0px 0 0 -90px}
+            .emulator .phone_text { width: 315px; float: left; margin: 180px 0 0 -30px; }
+            .emulator .phone_text h1 { padding: 30px 0 0 5px; margin: 0; color: #d92128; font-family: HelvN; font-size: 30px; font-weight: normal; text-transform: uppercase; }
+            .emulator .phone_text h2 { padding: 0 0 0 0; margin: 0; color: #220F8C; font-family: HelvN; font-size: 80px; font-weight: normal; text-transform: uppercase; line-height: 76px; }
+            .emulator .phone_text p { padding: 10px 0 0 5px; margin: 0; color: #666; font-size: 18px; }
+
+       

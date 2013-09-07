@@ -1,7 +1,7 @@
 from django.http import Http404, HttpResponse
 from django.template.loader import get_template
 from django.template import Context
-from django.shortcuts import render
+from django.shortcuts import render ,render_to_response
 import datetime
 
 def hello(request):

@@ -5,6 +5,7 @@ from django.core.context_processors import csrf
 from blog.models import *
 from django.forms import ModelForm
 from django.http import Http404, HttpResponse,HttpResponseRedirect
+from django.template import RequestContext, loader
 class CommentForm(ModelForm):
     class Meta:
         model = Comment
@@ -40,7 +41,7 @@ def main(request):
     except (InvalidPage, EmptyPage):
         posts = paginator.page(paginator.num_pages)
 
-    return render_to_response("list.html", dict(posts=posts, user=request.user))
+    return render_to_response("list.html", dict(posts=posts, user=request.user),context_instance=RequestContext(request))
 
 def post(request, pk):
     """Single post with comments and a comment form."""
@@ -49,3 +50,21 @@ def post(request, pk):
     d = dict(post=post, comments=comments, form=CommentForm(), user=request.user)
     d.update(csrf(request))
     return render_to_response("post.html", d)
+def mobile(request):
+
+    """Main listing."""
+    posts = Post.objects.all().order_by("-created")
+    paginator = Paginator(posts, 3)
+
+    try: page = int(request.GET.get("page", '1'))
+    except ValueError: page = 1
+
+    try:
+        posts = paginator.page(page)
+    except (InvalidPage, EmptyPage):
+        posts = paginator.page(paginator.num_pages)
+
+    return render_to_response("front.html", dict(posts=posts, user=request.user))
+
+
+

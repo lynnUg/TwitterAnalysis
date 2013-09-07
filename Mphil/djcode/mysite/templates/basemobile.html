@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	<title>
+		{% block site_title %} My Site Title {% endblock %}
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% block page_css %}
+	  <!-- jQuery Mobile style sheet -->
+	  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" />
+
+	  <!-- my own style sheet - this doesn't override any of the jQuery styles, 
+                     just includes some of the styles I've already set up for the blog: -->
+	 
+	{% endblock %}
+
+	{% block page_js %}
+	  <!-- jQuery mobile script includes -->
+	  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	  <script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
+	{% endblock %}
+
+</head>
+<body>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

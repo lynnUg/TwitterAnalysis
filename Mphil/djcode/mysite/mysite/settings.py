@@ -72,6 +72,8 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    'templates',
+    '/Users/newuser/Github_tests/TwitterAnalysis/Mphil/djcode/mysite/',
 )
 
 # List of finder classes that know how to find static files in
@@ -107,7 +109,7 @@ ROOT_URLCONF = 'mysite.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-TEMPLATE_DIRS = ("/Users/newuser/Github_tests/TwitterAnalysis/Mphil/djcode/mysite/templates",
+TEMPLATE_DIRS = ('templates',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

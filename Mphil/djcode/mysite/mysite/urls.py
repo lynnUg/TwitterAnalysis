@@ -1,9 +1,11 @@
 from django.conf.urls.defaults import *
-from mysite.views import hello, current_datetime, hours_ahead
+from django.core.paginator import Paginator, InvalidPage, EmptyPage
+from mysite.views import hello, current_datetime, hours_ahead 
 from django.contrib import admin
 admin.autodiscover()
 from books import views
 from blog import views as the_view
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
@@ -18,4 +20,6 @@ urlpatterns = patterns('',
     url(r"^blog/", the_view.main),
     (r"^(\d+)/$", the_view.post),
     (r"^add_comment/(\d+)/$", the_view.add_comment),
+    url(r'^mobile/*$', the_view.mobile),
 )
+urlpatterns += staticfiles_urlpatterns()
