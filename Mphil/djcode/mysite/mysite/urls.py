@@ -5,6 +5,7 @@ from django.contrib import admin
 admin.autodiscover()
 from books import views
 from blog import views as the_view
+from NTV import views as a_view
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -21,5 +22,6 @@ urlpatterns = patterns('',
     (r"^(\d+)/$", the_view.post),
     (r"^add_comment/(\d+)/$", the_view.add_comment),
     url(r'^mobile/*$', the_view.mobile),
+     url(r'^mobile2/*$', a_view.mobile),
 )
 urlpatterns += staticfiles_urlpatterns()

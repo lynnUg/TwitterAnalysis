@@ -128,6 +128,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'books',
     'blog',
+    'NTV',
 )
 
 # A sample logging configuration. The only tangible logging
